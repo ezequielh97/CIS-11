@@ -1,3 +1,15 @@
 1.1.3 Section Review, Questions 1,3, 8, 12:
-1. 
+1.)An assembler converts source code into machine languae.The linker creates an executable program from the files the assembler concverted.
+3.)Each assembly language instruction corresponds to a single machine-language.
+8.)it is stronger in assembly language becasue it has more controll over the memory adress.
+12.)mov eax,y
+    add eax,y
+    mov ebx,3
+    imul ebx
+    mov x,eax
+    
+1.2.1 Section Review, Questions 2, 3, 10
+2.
 3.
+10.
+
