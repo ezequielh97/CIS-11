@@ -9,7 +9,7 @@
     mov x,eax
     
 1.2.1 Section Review, Questions 2, 3, 10
-2.
-3.
-10.
+2.translated programs excecute more quickly than interpreted ones because interpreted programs hve to decode the the program before they can excecute
+3.false
+10.they are translated into statements at an ISA level
 
