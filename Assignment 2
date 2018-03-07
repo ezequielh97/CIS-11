@@ -1,1 +1,23 @@
-
+ ----------------2.1.5 Section Review, Questions 1,2,3,4 and 5
+ 1.)arithmetic logic unit 
+ 2.)data bus , controll bus, adress bus
+ 3.)the memory is further away than the registers
+ 4.)fetch ,decode, excecute
+ 5.)fetch memory operands, store memory operands.
+------------ ----2.4.3 Section Review, Question 5
+5.)it handles external interrupts from hard-ware devices, such as the keyboard, system clock, and disk drives
+-----------------2.5.2 Section Review, Questions 1, 3, 4, and 5
+1.)application program level
+3.)bios comunicates wth the hardware direcctly and not the cpu
+4.)bios
+5.)no, bios works the same for all operating systems
+-------------------2.8 Review Question 7, 8, 9, 10, 12, 19, 20, 25, and 26
+7.)
+8.)
+9.)
+10.)
+12.)
+19.)
+20.)
+25.)
+26.)
