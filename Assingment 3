@@ -1,30 +1,30 @@
-3.1.11 Section Review, Questions 1, 2, 3, 4
+-------------3.1.11 Section Review, Questions 1, 2, 3, 4
 1.35d, DDh, 335o, 11011101b
 2.NO
 3.NO
 4.3 MOD (2*4)/(6-3+1)=1
-3.2.4 Section Review, Questions 4, 5
+---------------3.2.4 Section Review, Questions 4, 5
 4.EAX
 5.INVOKE ExitProcess,0
-3.3.3 Section Review, Questions 1, 2, 3, 4
+----------------3.3.3 Section Review, Questions 1, 2, 3, 4
 1..OBJ and .LST
 2.TRUE
 3.TRUE
 4.LOADER
-3.4.13 Section Review, Questions 1, 2, 3, 4, 5
-1.
-2.
-3.
-4.
-5.
-3.5.5 Section Review Question 3
-3.
-3.9.1 Short Answer, Questions 4, 5, 6, 25
-4.
+-------------------3.4.13 Section Review, Questions 1, 2, 3, 4, 5
+1.myVar SWORD 
+2.myVar BYTE
+3.myVar SBYTE
+4.myVar QWORD
+5.SDWORD
+---------------------3.5.5 Section Review Question 3
+3.ArraySize = ($ - myArray)
+--------------------------3.9.1 Short Answer, Questions 4, 5, 6, 25
+4.assembler is a program that translates your source code into machine code.
 5.
 6.
 25.
-3.9.2 Algorithm Workbench, Questions 4, 7, 1
+--------------------------3.9.2 Algorithm Workbench, Questions 4, 7, 1
 4.
 7.
 1.
