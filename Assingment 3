@@ -21,7 +21,7 @@
 3.ArraySize = ($ - myArray)
 --------------------------3.9.1 Short Answer, Questions 4, 5, 6, 25
 4.assembler is a program that translates your source code into machine code.
-5.
+5.the diffirence betweeen big endian and little endian is the way that bytes are stored
 6.
 25.
 --------------------------3.9.2 Algorithm Workbench, Questions 4, 7, 1
