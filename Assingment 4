@@ -1,1 +1,63 @@
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+--------------4.10
+ExitProcess proto
+
+.data
+source BYTE "this is a sting",0
+somwthing BYTE 50 DUP('B')
+target BYTE SIZEOF source DUP('#')
+
+
+
+
+
+.code
+main proc
+
+  ;initialize rcx SIZEOF source
+  MOV rcx, SIZEOF source
+
+
+  ;initialize pointr to last character in target
+  MOV rbx, 0
+
+  ;start loop
+  MYLOOP:
+
+
+  ;copy current character in source to current character in target
+  MOV rdx, QWORD PTR[source + rcx-1]
+
+  ;mov that charecter to currnt target
+  MOV DWORD PTR[target +rbx], rdx
+
+  ;decrement source pointer
+  DEC rdx
+
+  ;end loop
+  LOOP MY LOOP
+
+  ;grab current charecter in source
+  
+
+ 
