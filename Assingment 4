@@ -1,7 +1,7 @@
 ------------------------------4.2.8 Section Review, Questions 1, 2, 3, 4, 5, 6	
-1.)
-2.)
-3.)
+1.)ADD Val2, 10h
+2.)SUB EAX,Val3
+3.)SUB Val2, Val4
 4.)
 5.)
 6.)
