@@ -1,21 +1,22 @@
 ------------------------------4.2.8 Section Review, Questions 1, 2, 3, 4, 5, 6	
-1.)ADD Val2, 10h
-2.)SUB EAX,Val3
-3.)SUB Val2, Val4
-4.)
-5.)
-6.)
+1.)inc val2
+2.)sub eax,val3
+3.)mov rbx,val4
+   sub val2,rbx
+4.)carry flag = 0, sign flag = 1
+5.)overflow flag = 1 , sign flag =1
+6.)a) CF=1, SF=0, ZF=1, OF=0(b) C=0, SF=1, ZF=0, OF=1(c) CF=0, SF=1, ZF=0, OF=0
 
 ------------------------------4.3.8 Section Review, Questions 1,2,3,4,5
-1.)
-2.)
-3.)
-4.)
-5.)
+1.)false
+2.)false
+3.)true
+4.)false
+5.)true
 
 --------------------------4.4.5 Section Review, Questions 4,5
-4.)
-5.)
+4.)true
+5.)a = 10h, b=40h, c=003Bh, d=3, e=3, f=2
 
 
 
@@ -26,9 +27,6 @@ ExitProcess proto
 source BYTE "this is a sting",0
 somwthing BYTE 50 DUP('B')
 target BYTE SIZEOF source DUP('#')
-
-
-
 
 
 .code
