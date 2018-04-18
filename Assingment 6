@@ -3,14 +3,39 @@
 
 ExitProcess proto
 .data
-sum qword 0
+n DWORD = 0
+nmins1 DWORD =1
+nminus2 DWORD= 0
 .code
 main proc
-   mov  rax,5
-   add  rax,6
-   mov  sum,rax
+mov rcx, 47
 
-   mov  ecx,0
+StartLoop:
+mov n, nminus2
+mov n, nminus1
+print n
+mov nminus2, nminus1
+mov nminu1, n
+
+
+mov rax , nminus2
+add rax, nminus1
+call Write64
+call Ctrlf
+mov r14, nminus1
+movr15, rax
+
+mov nminus2, r14
+mov nminus1, rax
+
+
+
+
+
+Loop StartLoop
+
+
+ 
    call ExitProcess
 main endp
 end
