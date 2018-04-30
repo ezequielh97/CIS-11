@@ -1,0 +1,65 @@
+ExitProccess PROTO
+Writeint64 PROTO
+
+
+.data
+myArray QWORD 1d,2d,3d,4d,5d,6d
+
+
+
+.code
+main proc
+
+	mov rcx, 6               ;set loop counter to SIZEOF my Array
+	mov rbx, 0
+	mov r12, 8
+	STARTLOOP:               ;start loop
+		mov rax, rbx
+		mul r12
+		mov r11, rax
+		mov rax, myArray[r11]
+		call WriteInt64                         ; swap next to array two values
+	I	INC rbx
+	LOOP STARTLOOP             ;end loop
+
+
+	call ctrlf
+
+	mov rcx, 3
+	mov rbx, 0
+	SWAPLOOP:
+			 MOV RAX,RBX
+			mul r12
+			mov r11, rax ;first of the teo to swap
+			mov rbp, r11
+			add rbp, 8                 ;rbp is the second index offset
+
+
+			;swap
+			mov r14, myArray[r11]                ; store the first value un r14
+			mov r15,myArray[rbp]                 ; store the second value in r15
+			mov myArray[r11], r15
+			mov myArray[rbp], r14
+				
+	LOOP SWAPLOOP
+
+
+		mov rcx, 6               ;set loop counter to SIZEOF my Array
+	mov rbx, 0
+	mov r12, 8
+	STARTLOOP:               ;start loop
+		mov rax, rbx
+		mul r12
+		mov r11, rax
+		mov rax, myArray[r11]
+		call WriteInt64                         ; swap next to array two values
+	I	INC rbx
+	LOOP STARTLOOP             ;end loop
+
+
+
+
+
+call Exitprocess
+main endp
+end
