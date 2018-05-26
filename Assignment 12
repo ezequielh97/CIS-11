@@ -1,0 +1,49 @@
+-----------------------------Chapter 4, Section 4.10 Programming Exercises: Question 8
+
+ExitProcess PROTO
+WriteInt64 PROTO
+ReadInt64 PROTO
+Crlf PROTO
+
+.data
+myArray QWORD 10,20,30,40
+
+.code
+main proc
+  mov rcx, LENGTHOF myArray
+  mov rsi, 0
+  
+  
+  LOOP:
+     mov rax, myArray[rsi*8]
+     call WriteInt64
+     inc rsi
+  LOOP LOOP
+  call Crlf
+
+  mov rcx, LENGTHOF myarray - 1
+  
+  
+  
+  MYLOOP:
+      mov r9, myArray[rcx*8]
+      mov r13, rcx
+      dec r13
+      mov r10, myArray[r13*8]
+
+      mov myArray[rcx * 8], r10
+      mov myArray[r13 * 8], r9
+  LOOP MYLOOP
+  mov rcx, LENGTHOF myArray
+  mov rsi, 0
+  
+  
+  MYLOOP2:
+      mov rax, myArray[rsi*8]
+      call WriteInt64
+      inc rsi
+    LOOP MYLOOP2
+
+ INVOKE ExitProcess,0
+ main ENDP
+ END main
