@@ -44,6 +44,6 @@ main proc
       inc rsi
     LOOP MYLOOP2
 
- call ExitProcess,0
+ call ExitProcess
  main ENDP
  END main
